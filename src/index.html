@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Basics</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header__box">
+          <h1>Password Matching</h1>
+          <div class="pass_match">
+            <label for="pass">Password:</label><br />
+            <input type="text" id="pass" /><br />
+            <label for="c_pass">Confirm Password:</label><br />
+            <input type="text" id="c_pass" /><br />
+            <p id="result"></p>
+            <button id="pass_btn">Submit</button>
+          </div>
+          <hr />
+          <h1>Table Row Color Change</h1>
+          <div class="color_change">
+            <button id="e_color">Color Even Column</button>
+            <button id="o_color">Color Odd Column</button>
+            <table id="color">
+              <thead>
+                <tr>
+                  <th>Company</th>
+                  <th>Contact</th>
+                  <th>Country</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>CEDCOSS</td>
+                  <td>Satyam</td>
+                  <td>India</td>
+                </tr>
+                <tr>
+                  <td>CEDCOSS</td>
+                  <td>Anuj</td>
+                  <td>India</td>
+                </tr>
+                <tr>
+                  <td>CEDCOSS</td>
+                  <td>Deeksha</td>
+                  <td>India</td>
+                </tr>
+                <tr>
+                  <td>CEDCOSS</td>
+                  <td>Ayush</td>
+                  <td>India</td>
+                </tr>
+                <tr>
+                  <td>CEDCOSS</td>
+                  <td>Mansi</td>
+                  <td>India</td>
+                </tr>
+                <tr>
+                  <td>CEDCOSS</td>
+                  <td>Vaibhav</td>
+                  <td>India</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <hr />
+          <h1>Empty Field</h1>
+          <div class="empty">
+            <label for="first_empty">First Name:</label><br />
+            <input type="text" id="first_empty" /><br />
+            <label for="last_empty">Last Name:</label><br />
+            <input type="text" id="last_empty" /><br />
+            <button id="check_empty">Submit</button>
+          </div>
+        </div>
+      </header>
+      <hr />
+      <section>
+        <div class="section__box">
+          <h1>Dynamic Form Generation</h1>
+          <form id="'myForm">
+            <div id="original_form">
+              <input type="text" placeholder="Enter Class" />
+              <input type="text" placeholder="Enter Board" />
+              <input type="text" placeholder="Enter Marks" />
+              <input type="text" placeholder="Enter Division" />
+              <button id="add_input">+</button>
+              <button id="remove_input">-</button>
+            </div>
+            <div id="duplicate_form"></div>
+          </form>
+          <hr />
+          <h1>Event with time in JQuery</h1>
+          <div class="test">
+            <p>Car Details</p>
+            <p>
+              In real life, a car is an object. A car has properties like weight
+              and color, and methods like start and stop. All cars have the same
+              properties, but the property values differ from car to car.
+            </p>
+            <p>
+              All cars have the same methods, but the methods are performed at
+              different times.
+            </p>
+          </div>
+          <div class="demo">
+            <p>Food Details</p>
+            <p>The seven food categories are</p>
+            <p>
+              Vegetables, Fruits, Grains, legumes, nuts and seeds, Meat and
+              poultry, Fish and seafood, Dairy foods, Eggs
+            </p>
+            <p>
+              Food sources from animals, birds, seafood and some plants provide
+              protein that is the building blocks of cells
+            </p>
+          </div>
+          <div class="test">
+            <p>Mobile Details</p>
+            <p>
+              There are three categories of mobile phones: basic phones, feature
+              phones, and smartphones.
+            </p>
+            <p>Smartphones are equipped with a QWERTY keypad.</p>
+          </div>
+          <h1>Image Gallery</h1>
+          <div class="img_gallery">
+            <button id="pre_btn">Previous</button>
+            <button id="nxt_btn">Next</button>
+            <div class="display_img">
+                <img src="./image/img1.jpg" alt="image" id="real_img">
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <aside>
+        <div class="aside__box">
+            <h1>Live Search</h1>
+            <div class="liv_srch">
+                <input type="text" id="search_txt">
+                <p>Suggestions: <span id="suggest"></span></p>
+            </div>
+            <hr>
+            <h1>Dynamic Content</h1>
+            <div class="dynamic_cnt">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><b>Name</b></th>
+                            <th><b>Size/Color</b></th>
+                            <th><b>Price</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Duffle Bag</td>
+                            <td>
+                                <select name="bags" id="bag">
+                                    <option value="0">Small</option>
+                                    <option value="1">Medium</option>
+                                    <option value="2">Large</option>
+                                </select>
+                            </td>
+                            <td id="change1">1000/-</td>
+                        </tr>
+                        <tr>
+                            <td>T-Shirt</td>
+                            <td>
+                                <select name="shirts" id="shirt">
+                                    <option value="0">Light Grey</option>
+                                    <option value="1">Black</option>
+                                    <option value="2">blue</option>
+                                </select>
+                            </td>
+                            <td id="change2">1200/-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </aside>
+      <hr>
+      <footer>
+        <div class="footer__box">
+            <h1>Simple Event</h1>
+            <div class="sim_event">
+                <p id="pop_up">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est at distinctio expedita similique molestiae ut mollitia eum quasi natus beatae itaque architecto consectetur, ratione fugiat. Veritatis quae sint doloremque cupiditate rem excepturi nemo dolores corporis dicta hic facere laborum voluptatum perspiciatis eius illum voluptates amet consequatur facilis reprehenderit ad quas iusto, ea doloribus. Vel quos dolores dolorum quo modi libero quidem veritatis ullam dolor illo soluta dolorem odit aliquid perferendis accusamus repudiandae vitae aut sunt, corrupti praesentium ratione, nemo nesciunt earum! Assumenda, aliquam. Ex enim nostrum delectus porro tempore ratione rerum quo in neque omnis nobis nesciunt, doloribus unde qui dolorum nulla veritatis magni ab voluptatum laborum quia quas reprehenderit. Error, quia voluptatum. Dolore cupiditate id velit ipsam ducimus illum optio nam nisi, quaerat aut doloremque corporis dolorum nemo. Quasi, dignissimos minus. Accusantium magni excepturi quae molestias voluptates nihil numquam voluptatibus molestiae vero delectus! Quo earum ad corporis ut consectetur eaque beatae labore dolor cupiditate voluptatibus quisquam ipsa ullam ipsam voluptates rem mollitia, dolores quidem ea sapiente et officiis assumenda. Non cupiditate laboriosam esse aliquam alias? Tempora facilis, vero dolorem eum saepe quaerat? Commodi voluptatum eos tempore ad ducimus in corporis iste nemo reprehenderit. Dolore, beatae. Vel aliquam voluptas officia.</p>
+            </div>
+            <h1>Dynamic List generation</h1>
+            <div class="dynamic_lst">
+                <ul>
+                    <div id="main_list">
+                        <div id="original_clothes">
+                            <li>Clothes <button id="clothes_btn">+</button>
+                                <ul>
+                                    <div id="original_shirt">
+                                        <li>T-Shirts <button id="shirt_btn">+</button></li>
+                                    </div>
+                                    <div id="duplicate_shirt"></div>
+                                    <div id="original_trouser">
+                                        <li>Trousers <button id="trouser_btn">+</button></li>
+                                    </div>
+                                    <div id="duplicate_trouser"></div>
+                                </ul>
+                            </li>
+                        </div>
+                        <div id="duplicate_clothes"></div>
+                        <div id="original_electronics">
+                            <li>Electronics <button id="electronics_btn">+</button>
+                                <ul>
+                                    <div id="original_mobiles">
+                                        <li>Mobiles <button id="mobile_btn">+</button></li>
+                                    </div>
+                                    <div id="duplicate_mobiles"></div>
+                                    <div id="original_tabs">
+                                        <li>Tabs <button id="tab_btn">+</button></li>
+                                    </div>
+                                    <div id="duplicate_tabs"></div>
+                                </ul>
+                            </li>
+                        <div id="duplicate_electronics"></div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="./JS/script.js"></script>
+</html> 

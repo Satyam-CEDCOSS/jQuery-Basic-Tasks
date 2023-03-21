@@ -1,0 +1,35 @@
+/* for all */
+h1{
+    font-size: 35px; 
+}
+
+
+/* header for color table  */
+.color_change table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+
+/* dynamic form  */
+form{
+    padding: -1px;
+    margin: -1px;
+}
+
+/* image gallery */
+.display_img{
+    border: 1px solid red;
+    height: 500px;
+    width: 800px;
+    margin-top: 10px;
+}
+.display_img img{
+    height: 500px;
+    width: 800px;
+}
+
+/* Dynamic Content  */
+.dynamic_cnt table{
+    width: 50%;
+}
