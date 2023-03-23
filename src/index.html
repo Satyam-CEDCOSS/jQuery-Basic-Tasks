@@ -83,16 +83,17 @@
       <section>
         <div class="section__box">
           <h1>Dynamic Form Generation</h1>
-          <form id="'myForm">
-            <div id="original_form">
-              <input type="text" placeholder="Enter Class" />
-              <input type="text" placeholder="Enter Board" />
-              <input type="text" placeholder="Enter Marks" />
-              <input type="text" placeholder="Enter Division" />
-              <button id="add_input">+</button>
-              <button id="remove_input">-</button>
+          <form id="myform">
+            <div id="main_form">
+              <div id="original_form">
+                <input type="text" placeholder="Enter Class" />
+                <input type="text" placeholder="Enter Board" />
+                <input type="text" placeholder="Enter Marks" />
+                <input type="text" placeholder="Enter Division" />
+                <button id="add_input">+</button>
+                <button id="remove_input">-</button>
+              </div>
             </div>
-            <div id="duplicate_form"></div>
           </form>
           <hr />
           <h1>Event with time in JQuery</h1>
@@ -196,36 +197,28 @@
             <div class="dynamic_lst">
                 <ul>
                     <div id="main_list">
-                        <div id="original_clothes">
-                            <li>Clothes <button id="clothes_btn">+</button>
-                                <ul>
-                                    <div id="original_shirt">
-                                        <li>T-Shirts <button id="shirt_btn">+</button></li>
-                                    </div>
-                                    <div id="duplicate_shirt"></div>
-                                    <div id="original_trouser">
-                                        <li>Trousers <button id="trouser_btn">+</button></li>
-                                    </div>
-                                    <div id="duplicate_trouser"></div>
-                                </ul>
-                            </li>
-                        </div>
-                        <div id="duplicate_clothes"></div>
-                        <div id="original_electronics">
-                            <li>Electronics <button id="electronics_btn">+</button>
-                                <ul>
-                                    <div id="original_mobiles">
-                                        <li>Mobiles <button id="mobile_btn">+</button></li>
-                                    </div>
-                                    <div id="duplicate_mobiles"></div>
-                                    <div id="original_tabs">
-                                        <li>Tabs <button id="tab_btn">+</button></li>
-                                    </div>
-                                    <div id="duplicate_tabs"></div>
-                                </ul>
-                            </li>
-                        <div id="duplicate_electronics"></div>
-                        </div>
+                        <ul>
+                          <li>Clothes <button class="multiply">+</button>
+                            <ul>
+                              <li>
+                                T-shirt <button class="multiply">+</button>
+                              </li>
+                              <li>
+                                Trousers <button class="multiply">+</button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li>Electronics <button class="multiply">+</button>
+                            <ul>
+                              <li>
+                                Mobiles <button class="multiply">+</button>
+                              </li>
+                              <li>
+                                Tabs <button class="multiply">+</button>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
                     </div>
                 </ul>
             </div>

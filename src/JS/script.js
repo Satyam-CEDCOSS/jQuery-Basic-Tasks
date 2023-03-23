@@ -43,11 +43,13 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#add_input").click(function () {
     event.preventDefault();
-    $("#original_form").clone(true).appendTo("#duplicate_form");
+    let childs = $(this).parent().clone(true);
+    childs.find('input').val("")
+    $("#main_form").append(childs)
   });
   $("#remove_input").click(function () {
     event.preventDefault();
-    $("#duplicate_form").children().last().remove();
+    $(this).parent('#original_form').remove();
   });
 });
 
@@ -117,30 +119,9 @@ $(document).ready(function(){
     })
 });
 
-// Dynamic List Generation
+// Dynamic List Generation 
 $(document).ready(function(){
-  $("#clothes_btn").click(function () {
-    event.preventDefault();
-    $("#original_clothes").clone(true).appendTo("#duplicate_clothes");
-  });
-  $("#shirt_btn").click(function () {
-    event.preventDefault();
-    $("#original_shirt").clone(true).appendTo("#duplicate_shirt");
-  });
-  $("#trouser_btn").click(function () {
-    event.preventDefault();
-    $("#original_trouser").clone(true).appendTo("#duplicate_trouser");
-  });
-  $("#electronics_btn").click(function () {
-    event.preventDefault();
-    $("#original_electronics").clone(true).appendTo("#duplicate_electronics");
-  });
-  $("#mobile_btn").click(function () {
-    event.preventDefault();
-    $("#original_mobiles").clone(true).appendTo("#duplicate_mobiles");
-  });
-  $("#tab_btn").click(function () {
-    event.preventDefault();
-    $("#original_tabs").clone(true).appendTo("#duplicate_tabs");
-  });
+  $(".multiply").click(function(){
+    $(this).parent().clone(true).appendTo($(this).parent().parent())
+  })
 });
