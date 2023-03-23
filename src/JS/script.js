@@ -1,6 +1,6 @@
 // password matching 
 $(document).ready(function () {
-  $("#pass_btn").click(function () {
+  $("#c_pass").keyup(function () {
     if ($("#pass").val() == $("#c_pass").val()) {
       $("#result").html("Password Matched");
       $("#result").css("color", "green");
@@ -14,27 +14,28 @@ $(document).ready(function () {
 // Color the table field
 $(document).ready(function () {
   $("#e_color").click(function () {
-    $("#color tr:even").css("background-color", "#1e90ff");
     $("#color tr:odd").css("background-color", "#d3d3d3");
   });
   $("#o_color").click(function () {
-    $("#color tr:odd").css("background-color", "#1e90ff");
-    $("#color tr:even").css("background-color", "#d3d3d3");
+    $("#color tr:even").css("background-color", "#1e90ff");
   });
 });
 
 // Empty field
 $(document).ready(function () {
   $("#check_empty").click(function () {
-    if (!$("#first_empty").val()) {
+    $("#first_empty").css("background-color", "white");
+    $("#last_empty").css("background-color", "white");
+    if (!$("#first_empty").val() && !$("#last_empty").val()) {
       $("#first_empty").css("background-color", "red");
+      $("#last_empty").css("background-color", "red");
       alert("Please fill the empty field");
     } else if (!$("#last_empty").val()) {
       $("#last_empty").css("background-color", "red");
       alert("Please fill the empty field");
-    } else {
-      $("#first_empty").css("background-color", "white");
-      $("#last_empty").css("background-color", "white");
+    }else if (!$("#first_empty").val()){
+      $("#first_empty").css("background-color", "red");
+      alert("Please fill the empty field");
     }
   });
 });
